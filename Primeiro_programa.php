@@ -1,2 +1,3 @@
-Hello word ! 
+<?php
 
+echo "hello word!";
