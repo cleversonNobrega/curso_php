@@ -2,6 +2,6 @@
     
 echo "Digite um numero: \n";
 
-$numero = fgets();
+$numero = (float)fgets(STDIN);
 
 echo " O numero e: $numero\n";
