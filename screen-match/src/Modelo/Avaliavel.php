@@ -1,7 +1,9 @@
 <?php
 
-interface Avaliavel{
+namespace ScreenMatch\Modelo;
 
+interface Avaliavel
+{
     public function avalia(float $nota): void;
-    public function media():float;
+    public function media(): float;
 }

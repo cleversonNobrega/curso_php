@@ -1,6 +1,8 @@
 <?php
 
-class Serie extends Titulo implements Avaliavel
+namespace ScreenMatch\Modelo;
+
+class Serie extends Titulo
 {
     public function __construct(
         string $nome,
@@ -13,7 +15,7 @@ class Serie extends Titulo implements Avaliavel
         parent::__construct($nome, $anoLancamento, $genero);
     }
 
-    #[override]
+    #[Override]
     public function duracaoEmMinutos(): int
     {
         return $this->temporadas * $this->episodiosPorTemporada * $this->minutosPorEpisodio;

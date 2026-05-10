@@ -1,5 +1,9 @@
 <?php
 
+namespace ScreenMatch\Calculos;
+
+use ScreenMatch\Modelo\Titulo;
+
 class CalculadoraDeMaratona
 {
     private int $duracaoMaratona = 0;
@@ -9,7 +13,7 @@ class CalculadoraDeMaratona
         $this->duracaoMaratona += $titulo->duracaoEmMinutos();
     }
 
-     public function duracao(): int
+    public function duracao(): int
     {
         return $this->duracaoMaratona;
     }
