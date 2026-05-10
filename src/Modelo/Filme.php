@@ -9,4 +9,8 @@ class Filme  extends Titulo{
     ) {
         parant::__construct($nome, $anoLancamento, $genero);
     }
+
+    public function duracaoEmMinutos(): int{
+        return $this->duracaoEmMinutos;
+    }
 }

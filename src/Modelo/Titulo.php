@@ -23,4 +23,8 @@ class Filme {
 
         return $somaNotas / $quantidadeNotas;
     }
+
+    public function duracaoMinutos(): int{
+        return 0;
+    }
 }
