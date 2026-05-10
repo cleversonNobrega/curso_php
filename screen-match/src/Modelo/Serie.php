@@ -1,6 +1,6 @@
 <?php
 
-class Serie extends Titulo
+class Serie extends Titulo implements Avaliavel
 {
     public function __construct(
         string $nome,
@@ -13,6 +13,7 @@ class Serie extends Titulo
         parent::__construct($nome, $anoLancamento, $genero);
     }
 
+    #[override]
     public function duracaoEmMinutos(): int
     {
         return $this->temporadas * $this->episodiosPorTemporada * $this->minutosPorEpisodio;

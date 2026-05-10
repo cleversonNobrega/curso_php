@@ -9,7 +9,7 @@ class CalculadoraDeMaratona
         $this->duracaoMaratona += $titulo->duracaoEmMinutos();
     }
 
-    public function duracao(): int
+     public function duracao(): int
     {
         return $this->duracaoMaratona;
     }
