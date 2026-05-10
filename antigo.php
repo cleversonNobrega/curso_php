@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . "/src/model/Filme.php";
+require __DIR__ . "/src/Modelo/Filme.php";
 require __DIR__ . "/src/funcoes.php";
 
 echo "Bem-vindo(a) ao screen match!\n";
@@ -43,7 +43,7 @@ $filme = criaFilme(
     nome: "Thor: Ragnarok",
 );
 
-echo $filme-> $anoLancamento;
+echo $filme->anoLancamento;
 
 var_dump($notas);
 sort($notas);
