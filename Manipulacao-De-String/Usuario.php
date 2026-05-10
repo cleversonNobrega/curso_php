@@ -1,7 +1,17 @@
 <?php
 
 $email = 'felipe@gmail.com';
-$posicaoDoArroba = 3;
+$senha = '123';
 
-echo substr($email, 0 , 6) . PHP_EOL;
-echo substr($email, 7) . PHP_EOL;
+echo mb_strlen($senha) . PHP_EOL;
+
+if (mb_strlen($senha) < 8) {
+    echo 'Senha insegura' . PHP_EOL;
+}
+
+$posicaoDoArroba = strpos($email, '@');
+
+$usuario = substr($email, 0, $posicaoDoArroba);
+
+echo mb_strtoupper($usuario) . PHP_EOL;
+echo substr($email, $posicaoDoArroba + 1) . PHP_EOL;
