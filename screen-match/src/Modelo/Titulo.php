@@ -1,6 +1,7 @@
 <?php
 
-class Filme {
+class Titulo
+{
     private array $notas;
 
     public function __construct(
@@ -24,7 +25,8 @@ class Filme {
         return $somaNotas / $quantidadeNotas;
     }
 
-    public function duracaoMinutos(): int{
+    public function duracaoEmMinutos(): int
+    {
         return 0;
     }
 }
