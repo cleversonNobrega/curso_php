@@ -10,3 +10,17 @@ $notas = [
 
 ksort($notas);
 var_dump($notas);
+
+if(is_array($notas)){
+   echo 'sim e um array';
+}
+
+
+foreach($array as $numeral => $nomeNumero){
+   echo "$numero em portugues e: $nomeNumero" . PHP_EOL;
+}
+
+echo "Total:" . count($array) . PHP_EOL;
+
+
+var_dump(array_is_list($array));
