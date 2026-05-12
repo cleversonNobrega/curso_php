@@ -6,6 +6,11 @@ $array = [
     1.9 => 'tres'
 ];
 
-var_dump($array);
+$contador = 0;
 
-echo $array;
+foreach($array as $numeral => $nomeNumero){
+    echo "$numeral em portugues e: $nomeNumero" . PHP_EOL;
+    $contador++;
+}
+
+echo "Total:".count($array) . PHP_EOL;

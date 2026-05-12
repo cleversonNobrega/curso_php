@@ -6,8 +6,6 @@ foreach($telefones as $telefone){
     $telefoneValido = preg_match(
        '[0-9]{2}\) 9?[0-9]{4} - [0-9]{4}/'
     );
-
-
     if($telefoneValido){
         echo 'telefone valido' . PHP_EOL;
     }else {
