@@ -20,7 +20,13 @@ foreach($array as $numeral => $nomeNumero){
    echo "$numero em portugues e: $nomeNumero" . PHP_EOL;
 }
 
-echo "Total:" . count($array) . PHP_EOL;
 
 
-var_dump(array_is_list($array));
+foreach ($notas as $aluno => $nota){
+   if($aluno === 'Ana'){
+      return true;
+   }
+}
+
+echo 'vinicius fez a prova';
+var_dump(array_key_exists('Ana', $notas));
