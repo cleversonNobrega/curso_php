@@ -30,3 +30,14 @@ foreach ($notas as $aluno => $nota){
 
 echo 'vinicius fez a prova';
 var_dump(array_key_exists('Ana', $notas));
+
+
+echo 'Alguem tirou dez?' . PHP_EOL;
+var_dump(in_array(10, $notas));
+
+
+10 == '10';
+
+$nota['ana'];
+
+echo array_search(10, $nota);
