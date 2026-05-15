@@ -8,13 +8,26 @@ $bool = false;
 $array = [$string, $int, $float];
 
 $valorNumerico = '27';
-$valorInteiro = (int) $valorNumerico;
+$valorInteiro1 = (int) $valorNumerico;
 
 $valorDecimal = 27.5;
-$valorInteiro = (int) $valorDecimal;
+$valorInteiro2 = (int) $valorDecimal;
 
-var_dump($valorInteiro);
+var_dump($valorInteiro1);
+var_dump($valorInteiro2);
+
 var_dump((bool) '');
 
-
 var_dump((int) '27 bananas');
+
+if($string){
+    echo 'verdadeiro';
+}else{
+    echo 'false';
+}
+
+var_dump('valor numerico' == '0');
+
+var_dump('27' > 28);
+
+require 'screen-match/src/funcoes.php';
